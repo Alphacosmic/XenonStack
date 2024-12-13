@@ -1,0 +1,44 @@
+.\" Manpage for sysopctl
+.TH SYSOPCTL 1 "December 2024" "v0.1.0" "sysopctl Manual"
+.SH NAME
+sysopctl \- A tool to manage system services, processes, and system health
+.SH SYNOPSIS
+.B sysopctl
+[\fIcommand\fR] [\fIoptions\fR]
+.SH DESCRIPTION
+sysopctl is a command-line utility for managing Linux system services, checking system load, and controlling services.
+.SH COMMANDS
+.TP
+.B service list
+List all running services.
+.TP
+.B service start <name>
+Start a specific service.
+.TP
+.B service stop <name>
+Stop a specific service.
+.TP
+.B system load
+Show current system load averages.
+.SH OPTIONS
+.TP
+.B -h, --help
+Show this help message and exit.
+.TP
+.B -v, --version
+Show the version information for sysopctl.
+.SH EXAMPLES
+.TP
+sysopctl --help
+Show the help message for sysopctl.
+.TP
+sysopctl service list
+List all active services on the system.
+.TP
+sysopctl service start apache2
+Start the apache2 service.
+.TP
+sysopctl service stop apache2
+Stop the apache2 service.
+.SH SEE ALSO
+systemctl(1), uptime(1), ps(1)
